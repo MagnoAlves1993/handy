@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handy — Configurações</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="options">
+    <header class="options__header">
+      <span class="options__logo" aria-hidden="true">✋</span>
+      <h1 class="options__title">Configurações do Handy</h1>
+    </header>
+
+    <section class="options__section">
+      <h2 class="options__section-title">Botão flutuante</h2>
+
+      <div class="options__field">
+        <label for="button-size" class="options__label">Tamanho</label>
+        <select id="button-size" class="options__select">
+          <option value="small">Pequeno</option>
+          <option value="medium">Médio</option>
+          <option value="large">Grande</option>
+        </select>
+      </div>
+
+      <div class="options__field">
+        <label for="button-color" class="options__label">Cor</label>
+        <div class="options__color-row">
+          <input id="button-color" type="color" class="options__color-input">
+          <input id="button-opacity" type="range" min="0" max="1" step="0.05" class="options__range">
+          <span id="button-opacity-value" class="options__range-value">100%</span>
+        </div>
+      </div>
+
+      <div class="options__field">
+        <label for="button-variant" class="options__label">Variante</label>
+        <select id="button-variant" class="options__select">
+          <option value="jjk-gojo">JJK — Gojo</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="options__section">
+      <h2 class="options__section-title">Mão / painel de colagem</h2>
+
+      <div class="options__field">
+        <label for="hand-size" class="options__label">Tamanho</label>
+        <select id="hand-size" class="options__select">
+          <option value="small">Pequeno</option>
+          <option value="medium">Médio</option>
+          <option value="large">Grande</option>
+        </select>
+      </div>
+
+      <div class="options__field">
+        <label for="hand-color" class="options__label">Cor</label>
+        <div class="options__color-row">
+          <input id="hand-color" type="color" class="options__color-input">
+          <input id="hand-opacity" type="range" min="0" max="1" step="0.05" class="options__range">
+          <span id="hand-opacity-value" class="options__range-value">100%</span>
+        </div>
+      </div>
+
+      <div class="options__field">
+        <label for="hand-variant" class="options__label">Variante</label>
+        <select id="hand-variant" class="options__select">
+          <option value="default">Padrão</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="options__actions">
+      <button id="save-settings" class="options__button options__button--primary" type="button">
+        Salvar alterações
+      </button>
+      <button id="reset-settings" class="options__button" type="button">
+        Restaurar padrão
+      </button>
+    </div>
+
+    <p id="status-message" class="options__status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script src="options.js" type="module"></script>
+</body>
+</html>

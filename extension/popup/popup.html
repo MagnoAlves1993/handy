@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="popup__header">
+      <span class="popup__logo" aria-hidden="true">✋</span>
+      <h1 class="popup__title">Handy</h1>
+    </header>
+
+    <label class="popup__toggle" for="handy-toggle">
+      <span class="popup__toggle-label">Ativar botão flutuante</span>
+      <input id="handy-toggle" type="checkbox" class="popup__toggle-input">
+      <span class="popup__toggle-slider" aria-hidden="true"></span>
+    </label>
+
+    <p class="popup__hint">
+      Com a extensão ativa, um botão aparece no canto inferior direito das páginas.
+    </p>
+
+    <footer class="popup__footer">
+      <button id="open-options" class="popup__button" type="button">
+        Configurações
+      </button>
+    </footer>
+  </main>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

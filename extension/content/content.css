@@ -1,0 +1,206 @@
+#handy-root {
+  position: fixed;
+  bottom: 72px;
+  right: 20px;
+  z-index: 2147483646;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.handy-widget,
+.handy-panel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.handy-widget {
+  cursor: pointer;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.handy-widget:hover {
+  transform: scale(1.05);
+}
+
+.handy-widget svg,
+.handy-panel svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.handy-widget--hidden,
+.handy-panel--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+}
+
+/* Tamanhos */
+.handy-widget--small,
+.handy-panel--small {
+  width: 80px;
+  height: 80px;
+}
+
+.handy-widget--medium,
+.handy-panel--medium {
+  width: 110px;
+  height: 110px;
+}
+
+.handy-widget--large,
+.handy-panel--large {
+  width: 150px;
+  height: 150px;
+}
+
+/* Painel de linhas */
+.handy-panel {
+  position: absolute;
+  bottom: 140px;
+  right: 0;
+  cursor: default;
+  --line-color: #070707;
+}
+
+.handy-panel--small { width: 260px; }
+.handy-panel--medium { width: 360px; }
+.handy-panel--large { width: 480px; }
+
+.handy-panel__hand {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.25));
+}
+
+.handy-panel__hand svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.handy-panel__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.handy-panel__close:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Inputs embutidos nas palmas (unidades em px do viewBox do SVG) */
+.svg-palm-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 2000px;
+  height: 1500px;
+  margin-top: 500px;
+  margin-left: 500px;
+}
+
+.svg-left-palm {
+  transform: rotate(-10deg);
+  transform-origin: center center;
+}
+
+.svg-right-palm {
+  transform: rotate(10deg);
+  transform-origin: center center;
+}
+
+.svg-hand-line-input {
+  width: 100%;
+  height: 300px;
+  padding: 0 240px 0 60px;
+  font-size: 150px;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--line-color);
+  background: transparent;
+  border: none;
+  border-bottom: 37px solid var(--line-color);
+  border-radius: 0;
+  outline: none;
+  transition: all 0.25s ease;
+  cursor: text;
+}
+
+.svg-hand-line-input::placeholder {
+  color: rgba(7, 7, 7, 0.35);
+  font-weight: 600;
+  font-size: 140px;
+  letter-spacing: 0.02em;
+}
+
+.svg-hand-line-input:hover {
+  border-bottom-width: 52px;
+  background: rgba(7, 7, 7, 0.04);
+}
+
+.svg-hand-line-input:focus {
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom-color: var(--line-color);
+  border-bottom-width: 52px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0;
+  bottom: 45px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--line-color);
+  opacity: 0.4;
+  transition: opacity 0.2s;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
+.copy-btn svg {
+  width: 160px;
+  height: 160px;
+}
+
+.svg-left-palm .input-wrapper:first-child {
+  width: 1200px;
+  margin-left: 800px;
+}
+
+.svg-right-palm .input-wrapper:first-child {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: 800px;
+}
+
