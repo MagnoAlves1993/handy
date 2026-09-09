@@ -8,7 +8,8 @@ Uma extensão Chrome (Manifest V3) que injeta um painel flutuante para salvar, c
 
 ## Exemplo
 
-https://github.com/user-attachments/assets/f15243c5-44f6-420d-add2-3bcbd4fe28c8
+https://github.com/user-attachments/assets/ffa6640d-8ec3-46e2-becc-0a88ec3e6fcb
+
 
 ### Botão
 
