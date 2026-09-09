@@ -131,18 +131,6 @@ Para quem quer entender ou estender este projeto:
 
 (Estes comandos estão instalados como skills em `.github/skills/` — rode no Copilot Chat com `/` no VS Code)
 
-## 📌 Clarifications Registradas
-
-As seguintes decisões de design foram explicitadas durante a especificação:
-
-| Questão | Resposta |
-|---------|----------|
-| Quantas linhas fixas? | 6 linhas |
-| Sincronia em tempo real entre abas? | Não; reflete apenas ao reabrir o painel |
-| Fechar via Esc além do X? | Sim; Esc fecha o painel |
-
-Ver [specs/001-handy-clipboard/spec.md#clarifications](specs/001-handy-clipboard/spec.md#clarifications) para detalhes.
-
 ## 📚 Para Aprender Mais
 
 - [GitHub Spec Kit Docs](https://github.com/github/spec-kit)
